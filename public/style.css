@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url('../assets/login-img.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* navbar header */
+
+.logo-container{
+    position: fixed;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 10px 30px;
+}
+.logo-container h3{
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+/* login form */
+.login-container{
+    height: 100vh;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    margin-right: 18rem;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 20px #ffffff;
+    backdrop-filter: blur(5px);
+}
+.login-form input{
+    padding: 3px;
+    width: 80%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background:transparent;
+    /* border-bottom: 1px solid #000000; */
+    border-bottom: 1px solid #ffffff;
+}
+.login-form button{
+    width: 50%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    transition: background-color 5000s ease-in-out 0s;
+    color: #ffffff !important;
+}
+#login-error-message{
+    color: #ff0000;
+    width: 80%;
+}
+
+.user-home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+    background-image: url('/assets/Home-page.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.user-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    /* margin-right: 18rem; */
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #ffffff;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.user-home-container h1{
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+/* admin home */
+.admin-home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+    padding: 10rem 0;
+    background-image: url('/assets/Home-page.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.admin-search-box{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+.admin-search-box input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 20rem;
+}
+
+/* admin home user list */
+.admin-user-view{
+    /* background-color: #ffffff7b; */
+    box-shadow: 1px 1px 20px #ffffff;
+    backdrop-filter: blur(5px);
+    width: 70vw;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    color: #ffffff;
+
+}
+.admin-user-view table{
+    width: 100%;
+    cursor: pointer;
+}
+.admin-user-view tr{
+    border-bottom: 1px solid #6c6c6c;
+}
+.admin-user-view th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+/* admin user update  */
+.user-update{
+    background: url('../assets/home-page.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.user-update-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: none; */
+}
+.user-update-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    /* background-color: #ffffff32; */
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 20px #ffffff;
+    border-radius: 20px;
+}
+.user-update-container form input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #6c6c6c;
+    width: 300px;
+}
+.adduser-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    /* margin-right: 18rem; */
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 20px #ffffff;
+    backdrop-filter: blur(5px);
+    /* color: #ffffff; */
+}
+.adduser-form input{
+    padding: 3px;
+    width: 80%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background:transparent;
+    /* border-bottom: 1px solid #000000; */
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+/* .adduser-form button{
+    width: 50%;
+} */

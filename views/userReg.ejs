@@ -1,0 +1,24 @@
+<%- include('header')%>
+
+    <div class="d-flex align-items-center justify-content-end login-container">
+        <form action="/user/register" method="post" class="login-form" id="registration-form">
+
+            <h2 class="text-white">New Register</h2>
+            <input type="text" class="user-register-name text-white" name="userName" placeholder="Full name" required>
+
+            <input type="email" class="user-register-email text-white" name="userMail" placeholder="Email address" required>
+
+            <input type="password" class="user-register-password text-white" name="userPassword" id="user-register-password"
+                placeholder="password" required>
+                
+            <% if(status) {%>
+                <label style="color: red;">
+                    <%=mess%>
+                </label>
+                <% }%>
+
+                    <button type="submit" class="btn btn-primary" id="user-register-btn">Register</button>
+
+                    <h6 class="text-white">Already have an account ? <a href="/">Login here</a></h6>
+        </form>
+    </div>

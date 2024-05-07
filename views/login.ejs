@@ -1,0 +1,27 @@
+<%- include('header')%>
+
+    <div class="logo-container justify-content-end ">
+        <label for="form2Example3">
+            <a class="cls" href="/admin/login"><button class="d-flex bg-secondary border-0 rounded-3 px-4 pt-2 pb-2 ">
+                    Admin Login</button></a>
+        </label>
+    </div>
+
+    <div class=" d-flex align-items-center justify-content-end login-container">
+        <form action="/user/login" method="post" class="login-form">
+            <h2 class="text-white">login Page</h2>
+            <input type="email" class="user-login-email text-white" name="userMail" placeholder="username" required>
+
+            <input type="password" class="text-white" name="userPassword" placeholder="password" required>
+
+            <% if(status){ %>
+                <label style="color: red;">
+                    <%= loginErrorMess %>
+                </label>
+                <% } %>
+
+                    <button type="submit" class="btn btn-primary">Login</button>
+
+                    <h6 class="text-white">Create a Account? <a href="/user/register">Sign up</a></h6>
+        </form>
+    </div>

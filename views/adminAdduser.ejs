@@ -1,0 +1,18 @@
+<%-include('header') %>
+    <%-include('adminNav') %>
+
+        <div class="d-flex align-items-center justify-content-center login-container">
+            <form action="/admin/newUser" method="post" class="adduser-form" id="registration-form">
+                <h2 class="text-white">Add New User</h2>
+                <input type="text" class="user-register-name" name="userName" placeholder="Full name" required>
+                <input type="email" class="user-register-email" name="userMail" placeholder="Email address" required>
+                <input type="password" class="user-register-password" name="userPassword" id="user-register-password"
+                    placeholder="password" required>
+                <% if(status) {%>
+                    <label style="color: red;">
+                        <%=mess%>
+                    </label>
+                    <% }%>
+                    <button type="submit" class="btn btn-primary" id="user-register-btn">Add User</button>
+            </form>
+        </div>
